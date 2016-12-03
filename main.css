@@ -1,16 +1,29 @@
-img {
-  height: 300px;
+body {
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+header {
+  padding: 40px;
+  background-color: lightblue;
+  text-align: center;
+}
+
+header h1 {
+
 }
 
 section {
-  margin: 20px 0px;
   text-align: center;
+  background-color: lightseagreen;
 }
+
 .gallery img {
+  height: 300px;
   margin: 0px 10px;
 }
 
 footer {
   text-align: center;
-  margin: 40px 0px;
+  padding: 40px;
+  background-color: lightgoldenrodyellow;
 }
