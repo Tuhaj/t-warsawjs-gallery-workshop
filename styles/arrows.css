@@ -1,0 +1,21 @@
+.arrow {
+  margin-top: 40px;
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+}
+
+.arrow-right {
+  margin-right: 40px;
+  float: right;
+
+  border-left: 30px solid white;
+}
+
+.arrow-left {
+  margin-left: 40px;
+  float: left;
+
+  border-right: 30px solid white;
+}
