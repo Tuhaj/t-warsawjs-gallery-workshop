@@ -9,7 +9,7 @@ header {
   color: white;
 }
 
-header h1 {
+header h1, header h2 {
   font-weight: normal;
 }
 
