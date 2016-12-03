@@ -1,17 +1,29 @@
-let displayWindow = document.querySelector('.display-window');
-let images = Array.from(document.querySelectorAll('img'));
+var Gallery = {
+  init() {
+    this.setupListeners();
+  },
 
-function displayImage(imageSource) {
-  let img = document.createElement('img');
-  img.src = imageSource;
-  displayWindow.innerHTML = '';
-  displayWindow.appendChild(img);
-}
+  displayWindow: document.querySelector('.display-window'),
+  images: Array.from(document.querySelectorAll('img')),
 
-images.forEach((image) => {
-  image.addEventListener('click', (e) => {
-    let imageSource = image.parentNode.href;
-    displayImage(imageSource)
-    e.preventDefault();
-  });
-});
+  setupListeners() {
+    this.images.forEach((image) => {
+      image.addEventListener('click', (e) => {
+        let imageSource = image.parentNode.href;
+        this.displayImage(imageSource);
+        e.preventDefault();
+      });
+    });
+  },
+
+  displayImage(imageSource) {
+    let img = document.createElement('img');
+    img.src = imageSource;
+    this.displayWindow.innerHTML = '';
+    this.displayWindow.appendChild(img);
+  }
+};
+
+Gallery.init();
+
+
