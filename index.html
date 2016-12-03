@@ -3,19 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <title>Art Gallery for WarsawJS workshop</title>
-  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
-  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="scripts/main.js"></script>
 </head>
 <body>
   <header>
     <h1>Prace Radosława Pytelewskiego</h1>
   </header>
 
-  <section class="gallery">
-    <img src="http://tuwy.pl/media/1/0/6/0/2/10602/6581.jpg"/>
-    <img src="https://cdn1.onebid.pl/52/0051_1b.jpg"/>
-    <img src="https://pbs.twimg.com/media/CJT9n28WUAAi-wc.png"/>
+  <ul class='navigation'>
+    <li>
+      <a href="#"><img src="http://tuwy.pl/media/1/0/6/0/2/10602/6581.jpg"/></a>
+    </li>
+    <li>
+      <a href="#"><img src="https://cdn1.onebid.pl/52/0051_1b.jpg"/></a>
+    </li>
+    <li>
+      <a href="#"><img src="https://pbs.twimg.com/media/CJT9n28WUAAi-wc.png"/></a>
+    </li>
+  </ul>
+
+  <section class="display-area">
+    <a href="#" class="left-arrow"></a>
+    <div class="display-window"></div>
+    <a href="#" class="right-arrow"></a>
   </section>
 
   <footer>
