@@ -1,16 +1,22 @@
 body {
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 header {
   padding: 20px;
-  background-color: lightblue;
+  background-color: black;
   text-align: center;
+  color: white;
+}
+
+header h1 {
+  font-weight: normal;
 }
 
 .navigation {
+  padding: 20px;
   text-align: center;
-  background-color: lightseagreen;
+  background-color: white;
 }
 
 .navigation .crop-height {
@@ -23,7 +29,6 @@ header {
   width: 200px;
   max-width: 100%;
   height: auto !important;
-  -ms-interpolation-mode: bicubic;
 }
 
 .display-area {
@@ -52,5 +57,4 @@ ul li {
 footer {
   text-align: center;
   padding: 40px;
-  background-color: lightgoldenrodyellow;
 }
