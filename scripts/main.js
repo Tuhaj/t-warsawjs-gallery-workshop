@@ -1,11 +1,16 @@
 var Gallery = {
   init() {
     this.setupListeners();
+    this.insertFirstImage();
   },
 
   currentlyDisplayed: 0,
   displayWindow: document.querySelector('.display-window'),
   images: Array.from(document.querySelectorAll('img')),
+
+  insertFirstImage() {
+    this.displayImageNo(this.currentlyDisplayed);
+  },
 
   setupListeners() {
     this.addListenersToThumbnails();
@@ -67,7 +72,7 @@ var Gallery = {
   displayImageNo(number) {
     this.currentlyDisplayed = number;
     let currentImage = this.images[number]
-    this.displayImage(currentImage.parentNode.href)
+    this.displayImage(currentImage.src)
   },
 };
 
